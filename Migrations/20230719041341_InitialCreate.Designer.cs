@@ -11,7 +11,7 @@ using RoasterBuddy.Models;
 namespace RoasterBuddy.Migrations
 {
     [DbContext(typeof(RoasterBuddyContext))]
-    [Migration("20230705225729_InitialCreate")]
+    [Migration("20230719041341_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -42,56 +42,56 @@ namespace RoasterBuddy.Migrations
                     b.HasData(
                         new
                         {
-                            ID = new Guid("50d1b4ea-fca9-4c61-9863-357d959d6f18"),
+                            ID = new Guid("b67f5f89-9d69-49b5-8415-39e4d0819825"),
                             Address = "123 Main St, Louisville, KY",
                             ContactInformation = "bluegrassbeans@example.com",
                             Name = "Bluegrass Beans"
                         },
                         new
                         {
-                            ID = new Guid("9faded71-46eb-477e-9c20-42e38f7e1a6a"),
+                            ID = new Guid("41913251-fd7e-4db1-8b18-0202f6105ce9"),
                             Address = "456 River Rd, Louisville, KY",
                             ContactInformation = "rivercityroasts@example.com",
                             Name = "River City Roasts"
                         },
                         new
                         {
-                            ID = new Guid("0d5c991f-8aa3-4bb5-a373-347f4ee2c14a"),
+                            ID = new Guid("6bd92ed2-8924-4c0e-b79e-7aaad8830af2"),
                             Address = "789 Derby Ln, Louisville, KY",
                             ContactInformation = "derbydaycoffee@example.com",
                             Name = "Derby Day Coffee"
                         },
                         new
                         {
-                            ID = new Guid("4c2d9120-cf7a-44cc-895b-90a89159a6e5"),
+                            ID = new Guid("faf98f72-d185-4f91-b7f5-39fcd186df33"),
                             Address = "321 Bardstown Rd, Louisville, KY",
                             ContactInformation = "bardstownbrews@example.com",
                             Name = "Bardstown Brews"
                         },
                         new
                         {
-                            ID = new Guid("353c78e6-c1f6-40ba-bc4e-405ca76ecb5b"),
+                            ID = new Guid("aac7834f-30ec-4675-b7e4-c653365bcd12"),
                             Address = "654 Southern Pkwy, Louisville, KY",
                             ContactInformation = "southerncomfortcafe@example.com",
                             Name = "Southern Comfort Cafe"
                         },
                         new
                         {
-                            ID = new Guid("a7f70ea1-1e9b-40fc-a05a-58c97db1e1ef"),
+                            ID = new Guid("fe65b1ce-4c01-4282-887d-c59a61950c76"),
                             Address = "987 Cherokee Rd, Louisville, KY",
                             ContactInformation = "cherokeeparkperks@example.com",
                             Name = "Cherokee Park Perks"
                         },
                         new
                         {
-                            ID = new Guid("36f8ac8b-205d-46bf-8949-260527b1af45"),
+                            ID = new Guid("b8e64727-a71a-4d7f-97dd-5ffb8a041244"),
                             Address = "135 Churchill Dr, Louisville, KY",
                             ContactInformation = "churchillgrinds@example.com",
                             Name = "Churchill Grinds"
                         },
                         new
                         {
-                            ID = new Guid("2a3194d9-91b2-445e-a104-539cfdc05a90"),
+                            ID = new Guid("2d1a63cf-31ae-453a-b3a8-ff632aa12d55"),
                             Address = "246 East Market St, Louisville, KY",
                             ContactInformation = "nulujava@example.com",
                             Name = "NuLu Java"
@@ -113,8 +113,14 @@ namespace RoasterBuddy.Migrations
                     b.Property<DateOnly>("DateOrdered")
                         .HasColumnType("TEXT");
 
-                    b.Property<int>("Price")
-                        .HasColumnType("INTEGER");
+                    b.Property<decimal>("Price")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("RoastLevel")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Source")
+                        .HasColumnType("TEXT");
 
                     b.HasKey("ID");
 

@@ -31,11 +31,13 @@
     <None Remove="Pages\Source\" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Models\" />
     <Folder Include="Pages\Client\" />
     <Folder Include="Pages\Order\" />
     <Folder Include="Pages\Roast\" />
     <Folder Include="Pages\Source\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="wwwroot\img\coffeebean.png" />
   </ItemGroup>
   <ItemGroup>
     <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="Models\RoasterBuddyContext.cs">

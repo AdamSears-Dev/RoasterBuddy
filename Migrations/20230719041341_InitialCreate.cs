@@ -64,7 +64,9 @@ namespace RoasterBuddy.Migrations
                     DateOrdered = table.Column<DateOnly>(type: "TEXT", nullable: false),
                     ClientId = table.Column<Guid>(type: "TEXT", nullable: true),
                     Amount = table.Column<int>(type: "INTEGER", nullable: false),
-                    Price = table.Column<int>(type: "INTEGER", nullable: false)
+                    Price = table.Column<decimal>(type: "TEXT", nullable: false),
+                    RoastLevel = table.Column<string>(type: "TEXT", nullable: true),
+                    Source = table.Column<string>(type: "TEXT", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -81,14 +83,14 @@ namespace RoasterBuddy.Migrations
                 columns: new[] { "ID", "Address", "ContactInformation", "Name" },
                 values: new object[,]
                 {
-                    { new Guid("0d5c991f-8aa3-4bb5-a373-347f4ee2c14a"), "789 Derby Ln, Louisville, KY", "derbydaycoffee@example.com", "Derby Day Coffee" },
-                    { new Guid("2a3194d9-91b2-445e-a104-539cfdc05a90"), "246 East Market St, Louisville, KY", "nulujava@example.com", "NuLu Java" },
-                    { new Guid("353c78e6-c1f6-40ba-bc4e-405ca76ecb5b"), "654 Southern Pkwy, Louisville, KY", "southerncomfortcafe@example.com", "Southern Comfort Cafe" },
-                    { new Guid("36f8ac8b-205d-46bf-8949-260527b1af45"), "135 Churchill Dr, Louisville, KY", "churchillgrinds@example.com", "Churchill Grinds" },
-                    { new Guid("4c2d9120-cf7a-44cc-895b-90a89159a6e5"), "321 Bardstown Rd, Louisville, KY", "bardstownbrews@example.com", "Bardstown Brews" },
-                    { new Guid("50d1b4ea-fca9-4c61-9863-357d959d6f18"), "123 Main St, Louisville, KY", "bluegrassbeans@example.com", "Bluegrass Beans" },
-                    { new Guid("9faded71-46eb-477e-9c20-42e38f7e1a6a"), "456 River Rd, Louisville, KY", "rivercityroasts@example.com", "River City Roasts" },
-                    { new Guid("a7f70ea1-1e9b-40fc-a05a-58c97db1e1ef"), "987 Cherokee Rd, Louisville, KY", "cherokeeparkperks@example.com", "Cherokee Park Perks" }
+                    { new Guid("2d1a63cf-31ae-453a-b3a8-ff632aa12d55"), "246 East Market St, Louisville, KY", "nulujava@example.com", "NuLu Java" },
+                    { new Guid("41913251-fd7e-4db1-8b18-0202f6105ce9"), "456 River Rd, Louisville, KY", "rivercityroasts@example.com", "River City Roasts" },
+                    { new Guid("6bd92ed2-8924-4c0e-b79e-7aaad8830af2"), "789 Derby Ln, Louisville, KY", "derbydaycoffee@example.com", "Derby Day Coffee" },
+                    { new Guid("aac7834f-30ec-4675-b7e4-c653365bcd12"), "654 Southern Pkwy, Louisville, KY", "southerncomfortcafe@example.com", "Southern Comfort Cafe" },
+                    { new Guid("b67f5f89-9d69-49b5-8415-39e4d0819825"), "123 Main St, Louisville, KY", "bluegrassbeans@example.com", "Bluegrass Beans" },
+                    { new Guid("b8e64727-a71a-4d7f-97dd-5ffb8a041244"), "135 Churchill Dr, Louisville, KY", "churchillgrinds@example.com", "Churchill Grinds" },
+                    { new Guid("faf98f72-d185-4f91-b7f5-39fcd186df33"), "321 Bardstown Rd, Louisville, KY", "bardstownbrews@example.com", "Bardstown Brews" },
+                    { new Guid("fe65b1ce-4c01-4282-887d-c59a61950c76"), "987 Cherokee Rd, Louisville, KY", "cherokeeparkperks@example.com", "Cherokee Park Perks" }
                 });
 
             migrationBuilder.CreateIndex(

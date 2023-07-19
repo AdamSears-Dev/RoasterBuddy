@@ -11,7 +11,9 @@ namespace RoasterBuddy.Models
         [ForeignKey("ClientId")]
         public Client? Client { get; set; }
         public int Amount { get; set; }
-        public int Price { get; set; }
+        public decimal Price { get; set; }
+        public string? RoastLevel { get; set; }
+        public string? Source { get; set; }
     }
 }
 

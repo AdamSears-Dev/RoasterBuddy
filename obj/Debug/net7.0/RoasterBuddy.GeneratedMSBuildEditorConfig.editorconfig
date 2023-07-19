@@ -9,121 +9,121 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = RoasterBuddy
 build_property.RootNamespace = RoasterBuddy
-build_property.ProjectDir = /Users/adamsears/Documents/GitHub/RoasterBuddy/
+build_property.ProjectDir = C:\Users\Adam\source\repos\RoasterBuddy\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = /Users/adamsears/Documents/GitHub/RoasterBuddy
+build_property.MSBuildProjectDirectory = C:\Users\Adam\source\repos\RoasterBuddy
 build_property._RazorSourceGeneratorDebug = 
 
-[/Users/adamsears/Documents/GitHub/RoasterBuddy/Pages/Client/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ2xpZW50L0NyZWF0ZS5jc2h0bWw=
+[C:/Users/Adam/source/repos/RoasterBuddy/Pages/Client/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2xpZW50XENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/adamsears/Documents/GitHub/RoasterBuddy/Pages/Client/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ2xpZW50L0RlbGV0ZS5jc2h0bWw=
+[C:/Users/Adam/source/repos/RoasterBuddy/Pages/Client/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2xpZW50XERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/adamsears/Documents/GitHub/RoasterBuddy/Pages/Client/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ2xpZW50L0RldGFpbHMuY3NodG1s
+[C:/Users/Adam/source/repos/RoasterBuddy/Pages/Client/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2xpZW50XERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/adamsears/Documents/GitHub/RoasterBuddy/Pages/Client/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ2xpZW50L0VkaXQuY3NodG1s
+[C:/Users/Adam/source/repos/RoasterBuddy/Pages/Client/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2xpZW50XEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/adamsears/Documents/GitHub/RoasterBuddy/Pages/Client/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ2xpZW50L0luZGV4LmNzaHRtbA==
+[C:/Users/Adam/source/repos/RoasterBuddy/Pages/Client/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2xpZW50XEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/adamsears/Documents/GitHub/RoasterBuddy/Pages/Error.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRXJyb3IuY3NodG1s
+[C:/Users/Adam/source/repos/RoasterBuddy/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/adamsears/Documents/GitHub/RoasterBuddy/Pages/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5kZXguY3NodG1s
+[C:/Users/Adam/source/repos/RoasterBuddy/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/adamsears/Documents/GitHub/RoasterBuddy/Pages/NewOrder.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTmV3T3JkZXIuY3NodG1s
+[C:/Users/Adam/source/repos/RoasterBuddy/Pages/NewOrder.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTmV3T3JkZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/adamsears/Documents/GitHub/RoasterBuddy/Pages/Order/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvT3JkZXIvQ3JlYXRlLmNzaHRtbA==
+[C:/Users/Adam/source/repos/RoasterBuddy/Pages/Order/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3JkZXJcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/adamsears/Documents/GitHub/RoasterBuddy/Pages/Order/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvT3JkZXIvRGVsZXRlLmNzaHRtbA==
+[C:/Users/Adam/source/repos/RoasterBuddy/Pages/Order/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3JkZXJcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/adamsears/Documents/GitHub/RoasterBuddy/Pages/Order/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvT3JkZXIvRGV0YWlscy5jc2h0bWw=
+[C:/Users/Adam/source/repos/RoasterBuddy/Pages/Order/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3JkZXJcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/adamsears/Documents/GitHub/RoasterBuddy/Pages/Order/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvT3JkZXIvRWRpdC5jc2h0bWw=
+[C:/Users/Adam/source/repos/RoasterBuddy/Pages/Order/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3JkZXJcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/adamsears/Documents/GitHub/RoasterBuddy/Pages/Order/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvT3JkZXIvSW5kZXguY3NodG1s
+[C:/Users/Adam/source/repos/RoasterBuddy/Pages/Order/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3JkZXJcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/adamsears/Documents/GitHub/RoasterBuddy/Pages/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUHJpdmFjeS5jc2h0bWw=
+[C:/Users/Adam/source/repos/RoasterBuddy/Pages/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/adamsears/Documents/GitHub/RoasterBuddy/Pages/Roast/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUm9hc3QvQ3JlYXRlLmNzaHRtbA==
+[C:/Users/Adam/source/repos/RoasterBuddy/Pages/Roast/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUm9hc3RcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/adamsears/Documents/GitHub/RoasterBuddy/Pages/Roast/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUm9hc3QvRGVsZXRlLmNzaHRtbA==
+[C:/Users/Adam/source/repos/RoasterBuddy/Pages/Roast/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUm9hc3RcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/adamsears/Documents/GitHub/RoasterBuddy/Pages/Roast/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUm9hc3QvRGV0YWlscy5jc2h0bWw=
+[C:/Users/Adam/source/repos/RoasterBuddy/Pages/Roast/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUm9hc3RcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/adamsears/Documents/GitHub/RoasterBuddy/Pages/Roast/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUm9hc3QvRWRpdC5jc2h0bWw=
+[C:/Users/Adam/source/repos/RoasterBuddy/Pages/Roast/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUm9hc3RcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/adamsears/Documents/GitHub/RoasterBuddy/Pages/Roast/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUm9hc3QvSW5kZXguY3NodG1s
+[C:/Users/Adam/source/repos/RoasterBuddy/Pages/Roast/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUm9hc3RcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/adamsears/Documents/GitHub/RoasterBuddy/Pages/Shared/_ValidationScriptsPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+[C:/Users/Adam/source/repos/RoasterBuddy/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/adamsears/Documents/GitHub/RoasterBuddy/Pages/Source/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU291cmNlL0NyZWF0ZS5jc2h0bWw=
+[C:/Users/Adam/source/repos/RoasterBuddy/Pages/Source/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU291cmNlXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/adamsears/Documents/GitHub/RoasterBuddy/Pages/Source/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU291cmNlL0RlbGV0ZS5jc2h0bWw=
+[C:/Users/Adam/source/repos/RoasterBuddy/Pages/Source/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU291cmNlXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/adamsears/Documents/GitHub/RoasterBuddy/Pages/Source/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU291cmNlL0RldGFpbHMuY3NodG1s
+[C:/Users/Adam/source/repos/RoasterBuddy/Pages/Source/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU291cmNlXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/adamsears/Documents/GitHub/RoasterBuddy/Pages/Source/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU291cmNlL0VkaXQuY3NodG1s
+[C:/Users/Adam/source/repos/RoasterBuddy/Pages/Source/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU291cmNlXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/adamsears/Documents/GitHub/RoasterBuddy/Pages/Source/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU291cmNlL0luZGV4LmNzaHRtbA==
+[C:/Users/Adam/source/repos/RoasterBuddy/Pages/Source/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU291cmNlXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/adamsears/Documents/GitHub/RoasterBuddy/Pages/_ViewImports.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+[C:/Users/Adam/source/repos/RoasterBuddy/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/adamsears/Documents/GitHub/RoasterBuddy/Pages/_ViewStart.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX1ZpZXdTdGFydC5jc2h0bWw=
+[C:/Users/Adam/source/repos/RoasterBuddy/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/adamsears/Documents/GitHub/RoasterBuddy/Pages/Shared/_Layout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19MYXlvdXQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = b-ascuqbz484
+[C:/Users/Adam/source/repos/RoasterBuddy/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-2kahwx6izr

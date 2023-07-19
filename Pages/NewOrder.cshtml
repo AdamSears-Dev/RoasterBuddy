@@ -1,5 +1,24 @@
 ﻿@page
 @model RoasterBuddy.Pages.NewOrderModel
 @{
+
+    <form action="/orders/create" method="post">
+        <label for="client">Client:</label>
+        <input type="text" id="client" name="client" required>
+
+        <label for="source">Source:</label>
+        <input type="text" id="source" name="source" required>
+
+        <label for="roastLevel">Roast Level:</label>
+        <input type="text" id="roastLevel" name="roastLevel" required>
+
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount" name="amount" required>
+
+        <label for="price">Price:</label>
+        <input type="number" id="price" name="price" required>
+
+        <button type="submit">Create Order</button>
+    </form>
 }
 
