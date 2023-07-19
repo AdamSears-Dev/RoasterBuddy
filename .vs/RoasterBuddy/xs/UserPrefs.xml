@@ -1,0 +1,41 @@
+﻿<Properties StartupConfiguration="{6EE3A710-4331-4C46-B222-DC43AAF0113F}|https">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <Debugger.DebugSourceFolders />
+  <MonoDevelop.Ide.ItemProperties.RoasterBuddy PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Program.cs">
+    <Files>
+      <File FileName="Models/RoasterBuddyContext.cs" Line="1" Column="1" />
+      <File FileName="Pages/Shared/_Layout.cshtml.css" Line="1" Column="1" />
+      <File FileName="Pages/Shared/_Layout.cshtml" Line="42" Column="46" />
+      <File FileName="../../../.nuget/packages/bootstrap/5.3.0/contentFiles/any/any/wwwroot/css/bootstrap.css" Line="1" Column="1" />
+      <File FileName="Program.cs" Line="25" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="RoasterBuddy" expanded="True">
+            <Node name="RoasterBuddy" expanded="True">
+              <Node name="Dependencies" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Pages" expanded="True">
+                <Node name="Shared" expanded="True">
+                  <Node name="_Layout.cshtml" expanded="True" />
+                </Node>
+              </Node>
+              <Node name="Properties" expanded="True" />
+              <Node name="wwwroot" expanded="True">
+                <Node name="css" expanded="True" />
+              </Node>
+              <Node name="Program.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
+</Properties>

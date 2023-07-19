@@ -1,0 +1,69 @@
+@page
+@model RoasterBuddy.Pages.IndexModel
+
+@{
+    ViewData["Title"] = "Home Page";
+    Layout = "_Layout";
+}
+
+<div class="container">
+    <h2>Clients</h2>
+    <table class="table table-bordered">
+        @foreach (var item in Model.Clients)
+        {
+            <tr>
+                <td>@item.Name</td>
+                <td>
+                    <a asp-page="./Client/Edit" asp-route-id="@item.ID">Edit</a> |
+                    <a asp-page="./Client/Details" asp-route-id="@item.ID">Details</a> |
+                    <a asp-page="./Client/Delete" asp-route-id="@item.ID">Delete</a>
+                </td>
+            </tr>
+        }
+    </table>
+
+    <h2>Orders</h2>
+    <table class="table table-bordered">
+        @foreach (var item in Model.Orders)
+        {
+            <tr>
+                <td>@item.DateOrdered</td>
+                <td>
+                    <a asp-page="./Order/Edit" asp-route-id="@item.ID">Edit</a> |
+                    <a asp-page="./Order/Details" asp-route-id="@item.ID">Details</a> |
+                    <a asp-page="./Order/Delete" asp-route-id="@item.ID">Delete</a>
+                </td>
+            </tr>
+        }
+    </table>
+
+    <h2>Sources</h2>
+    <table class="table table-bordered">
+        @foreach (var item in Model.Sources)
+        {
+            <tr>
+                <td>@item.Farm</td>
+                <td>
+                    <a asp-page="./Source/Edit" asp-route-id="@item.ID">Edit</a> |
+                    <a asp-page="./Source/Details" asp-route-id="@item.ID">Details</a> |
+                    <a asp-page="./Source/Delete" asp-route-id="@item.ID">Delete</a>
+                </td>
+            </tr>
+        }
+    </table>
+
+    <h2>Roasts</h2>
+    <table class="table table-bordered">
+        @foreach (var item in Model.Roasts)
+        {
+            <tr>
+                <td>@item.Name</td>
+                <td>
+                    <a asp-page="./Roast/Edit" asp-route-id="@item.ID">Edit</a> |
+                    <a asp-page="./Roast/Details" asp-route-id="@item.ID">Details</a> |
+                    <a asp-page="./Roast/Delete" asp-route-id="@item.ID">Delete</a>
+                </td>
+            </tr>
+        }
+    </table>
+</div>
