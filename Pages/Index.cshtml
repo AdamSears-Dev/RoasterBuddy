@@ -22,7 +22,7 @@
         }
     </table>
 
-    <h2>Orders</h2>
+    @*<h2>Orders</h2>
     <table class="table table-bordered">
         @foreach (var item in Model.Orders)
         {
@@ -50,6 +50,38 @@
                 </td>
             </tr>
         }
+    </table>*@
+
+    <h2>Orders</h2>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Date Ordered</th>
+                <th>Client</th>
+                <th>Source</th>
+                <th>Roast Level</th>
+                <th>Amount</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.Orders)
+            {
+                <tr>
+                    <td>@item.DateOrdered</td>
+                    <td>@item.Name</td>
+                    <td>@item.SourceName</td>
+                    <td>@item.RoastLevel</td>
+                    <td>@item.Amount</td>
+                    <td>@item.Price</td>
+                    <td>
+                        <a asp-page="./Order/Edit" asp-route-id="@item.ID">Edit</a> |
+                        <a asp-page="./Order/Details" asp-route-id="@item.ID">Details</a> |
+                        <a asp-page="./Order/Delete" asp-route-id="@item.ID">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
     </table>
 
     <h2>Roasts</h2>

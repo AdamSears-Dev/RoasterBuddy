@@ -18,15 +18,19 @@ namespace RoasterBuddy.Pages.Order
             _context = context;
         }
 
-        public IList<RoasterBuddy.Models.Order> Order { get;set; } = default!;
+        public IList<RoasterBuddy.Models.Order> Order { get; set; } = default!;
 
         public async Task OnGetAsync()
         {
             if (_context.Orders != null)
             {
-                Order = await _context.Orders
-                .Include(o => o.Client).ToListAsync();
+                Order = await _context.Orders.Include(o => o.Client).ToListAsync();
             }
         }
+
     }
 }
+
+    
+
+

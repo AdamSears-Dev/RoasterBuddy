@@ -7,5 +7,6 @@ namespace RoasterBuddy.Models
         public string? Name { get; set; }
         public string? Address { get; set; }
         public string? ContactInformation { get; set; }
+        public ICollection<Order> Orders { get; set; }
     }
 }

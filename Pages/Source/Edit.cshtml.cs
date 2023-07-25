@@ -22,14 +22,14 @@ namespace RoasterBuddy.Pages.Source
         [BindProperty]
         public RoasterBuddy.Models.Source Source { get; set; } = default!;
 
-        public async Task<IActionResult> OnGetAsync(int? id)
+        public async Task<IActionResult> OnGetAsync(Guid? id)
         {
             if (id == null || _context.Sources == null)
             {
                 return NotFound();
             }
 
-            var source =  await _context.Sources.FirstOrDefaultAsync(m => m.ID == id);
+            var source = await _context.Sources.FirstOrDefaultAsync(m => m.ID == id);
             if (source == null)
             {
                 return NotFound();
@@ -68,9 +68,9 @@ namespace RoasterBuddy.Pages.Source
             return RedirectToPage("./Index");
         }
 
-        private bool SourceExists(int id)
+        private bool SourceExists(Guid id)
         {
-          return (_context.Sources?.Any(e => e.ID == id)).GetValueOrDefault();
+            return (_context.Sources?.Any(e => e.ID == id)).GetValueOrDefault();
         }
     }
 }

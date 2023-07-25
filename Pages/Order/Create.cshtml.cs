@@ -20,21 +20,33 @@ namespace RoasterBuddy.Pages.Order
 
         public IActionResult OnGet()
         {
-        ViewData["ClientId"] = new SelectList(_context.Clients, "ID", "ID");
+            var sources = _context.Sources.ToList();
+            Console.WriteLine(sources.Count); // Debug line to check the number of sources
+
+
+            ViewData["ClientName"] = new SelectList(_context.Clients, "ID", "Name");
+            ViewData["SourceName"] = new SelectList(_context.Sources, "ID", "Farm");
             return Page();
         }
 
         [BindProperty]
-    public RoasterBuddy.Models.Order Order { get; set; } = default!;
-        
+        public RoasterBuddy.Models.Order Order { get; set; } = default!;
 
         // To protect from overposting attacks, see https://aka.ms/RazorPagesCRUD
         public async Task<IActionResult> OnPostAsync()
         {
-          if (!ModelState.IsValid || _context.Orders == null || Order == null)
+            if (!ModelState.IsValid || _context.Orders == null || Order == null)
             {
                 return Page();
             }
+
+            // Fetch the client based on the id provided in the order
+            var client = await _context.Clients.FindAsync(Order.ClientId);
+            var source = await _context.Sources.FindAsync(Order.SourceName);
+
+
+            // Assign the client to the order
+            Order.Client = client;
 
             _context.Orders.Add(Order);
             await _context.SaveChangesAsync();

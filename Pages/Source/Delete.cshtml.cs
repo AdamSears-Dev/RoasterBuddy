@@ -21,7 +21,7 @@ namespace RoasterBuddy.Pages.Source
         [BindProperty]
       public RoasterBuddy.Models.Source Source { get; set; } = default!;
 
-        public async Task<IActionResult> OnGetAsync(int? id)
+        public async Task<IActionResult> OnGetAsync(Guid? id)
         {
             if (id == null || _context.Sources == null)
             {
@@ -41,7 +41,7 @@ namespace RoasterBuddy.Pages.Source
             return Page();
         }
 
-        public async Task<IActionResult> OnPostAsync(int? id)
+        public async Task<IActionResult> OnPostAsync(Guid? id)
         {
             if (id == null || _context.Sources == null)
             {

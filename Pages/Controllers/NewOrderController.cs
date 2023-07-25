@@ -20,8 +20,8 @@ namespace RoasterBuddy.Controllers
                 // Map the form data to an Order object
                 var order = new Order
                 {
-                    Client = model.Client,
-                    Source = model.Source,
+                    Name = model.Client.Name,
+                    SourceName = model.Source,
                     RoastLevel = model.RoastLevel,
                     Amount = model.Amount,
                     Price = model.Price
@@ -32,7 +32,7 @@ namespace RoasterBuddy.Controllers
                 _context.SaveChanges();
 
                 // Redirect to a success page or display a success message
-                return RedirectToAction("Index", "Home");
+                return RedirectToAction("Order");
             }
 
             // If the form data is not valid, return the create view with validation errors

@@ -5,13 +5,13 @@ namespace RoasterBuddy.Models
     public class OrderViewModel
     {
         [Required]
-        public Client Client { get; set; }
+        public Client? Client { get; set; }
 
         [Required]
-        public string Source { get; set; }
+        public string? Source { get; set; }
 
         [Required]
-        public string RoastLevel { get; set; }
+        public string? RoastLevel { get; set; }
 
         [Required]
         public int Amount { get; set; }
