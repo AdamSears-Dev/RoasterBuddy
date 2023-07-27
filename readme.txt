@@ -1,4 +1,4 @@
-﻿RoasterBuddy by Adam Sears
+RoasterBuddy by Adam Sears
 
 
 RoasterBuddy is a .NET Core Razor Pages web application designed to manage coffee roasting orders. This application allows users to create, update, and delete clients, orders, and sources, ensuring an effective and streamlined order management. The app features a friendly user interface for easy navigation and usage. 
@@ -20,6 +20,8 @@ Getting Started
 3. Build and run the project (*requires .NET 6.0 or later*).
 4. Navigate through the application using the provided links.
 5. Add, edit, and delete clients, orders, and sources as necessary.
+6. Note for Mac users: make sure to change the location for the database file in appsettings.json 
+	*example is provided in comment
 
 
 Features
