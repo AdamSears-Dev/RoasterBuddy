@@ -10,7 +10,7 @@ builder.Services.AddRazorPages();
 // Add database context
 
 builder.Services.AddDbContext<RoasterBuddyContext>(options =>
-    options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
+    options.UseSqlite("Data Source=./RoastingOrders.db;"));
 
 var app = builder.Build();
 
