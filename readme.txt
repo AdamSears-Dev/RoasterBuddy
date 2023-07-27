@@ -2,6 +2,7 @@ RoasterBuddy by Adam Sears
 
 
 RoasterBuddy is a .NET Core Razor Pages web application designed to manage coffee roasting orders. This application allows users to create, update, and delete clients, orders, and sources, ensuring an effective and streamlined order management. The app features a friendly user interface for easy navigation and usage. 
+
 Code Louisville Requirements
 
 
