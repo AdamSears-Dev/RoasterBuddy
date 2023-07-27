@@ -27,6 +27,7 @@ namespace RoasterBuddy.Migrations
                         .HasColumnType("TEXT");
 
                     b.Property<string>("ContactInformation")
+                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Name")
@@ -39,56 +40,56 @@ namespace RoasterBuddy.Migrations
                     b.HasData(
                         new
                         {
-                            ID = new Guid("f44f57d2-9167-4810-ac47-aedbaf8d5cbc"),
+                            ID = new Guid("f8c6521e-8aab-4927-86ba-fdbc0bb0d0eb"),
                             Address = "123 Main St, Louisville, KY",
                             ContactInformation = "bluegrassbeans@example.com",
                             Name = "Bluegrass Beans"
                         },
                         new
                         {
-                            ID = new Guid("8d01c2a1-2e77-4ba0-a0bb-7f5826f4c781"),
+                            ID = new Guid("acdda976-63ad-47fa-b7d6-d89ea9ecbfe5"),
                             Address = "456 River Rd, Louisville, KY",
                             ContactInformation = "rivercityroasts@example.com",
                             Name = "River City Roasts"
                         },
                         new
                         {
-                            ID = new Guid("3f5fbbec-a13c-4c64-8c45-daf9819a67ba"),
+                            ID = new Guid("4e21b65e-202b-4e56-9184-86c1c8f61410"),
                             Address = "789 Derby Ln, Louisville, KY",
                             ContactInformation = "derbydaycoffee@example.com",
                             Name = "Derby Day Coffee"
                         },
                         new
                         {
-                            ID = new Guid("4ccace88-d885-4e44-8c87-f9a153f4c77f"),
+                            ID = new Guid("a3480537-8058-4499-a0aa-7717b261f826"),
                             Address = "321 Bardstown Rd, Louisville, KY",
                             ContactInformation = "bardstownbrews@example.com",
                             Name = "Bardstown Brews"
                         },
                         new
                         {
-                            ID = new Guid("ec8ce1b2-dba8-46f4-bd57-68ce7cf727d5"),
+                            ID = new Guid("1a4be23b-e81d-499a-ae49-129b61b2d12c"),
                             Address = "654 Southern Pkwy, Louisville, KY",
                             ContactInformation = "southerncomfortcafe@example.com",
                             Name = "Southern Comfort Cafe"
                         },
                         new
                         {
-                            ID = new Guid("6c5a4129-046f-4c6e-b082-e078339b4286"),
+                            ID = new Guid("ed8ba7b1-58c5-48ec-8843-e02b226347ad"),
                             Address = "987 Cherokee Rd, Louisville, KY",
                             ContactInformation = "cherokeeparkperks@example.com",
                             Name = "Cherokee Park Perks"
                         },
                         new
                         {
-                            ID = new Guid("82d543d9-f70b-41f3-94b2-cf780ee229ca"),
+                            ID = new Guid("4aff52d3-7077-4ca4-b070-8f3f45ee98b5"),
                             Address = "135 Churchill Dr, Louisville, KY",
                             ContactInformation = "churchillgrinds@example.com",
                             Name = "Churchill Grinds"
                         },
                         new
                         {
-                            ID = new Guid("ccd5de04-bdd7-42e9-a9f1-638c3efae7cd"),
+                            ID = new Guid("aad6251c-be37-48aa-9d22-67b2ad183c2b"),
                             Address = "246 East Market St, Louisville, KY",
                             ContactInformation = "nulujava@example.com",
                             Name = "NuLu Java"
@@ -116,136 +117,43 @@ namespace RoasterBuddy.Migrations
                     b.Property<decimal>("Price")
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("RoastLevel")
-                        .HasColumnType("TEXT");
+                    b.Property<int>("RoastLevel")
+                        .HasColumnType("INTEGER");
 
-                    b.Property<string>("SourceName")
+                    b.Property<Guid?>("SourceId")
                         .HasColumnType("TEXT");
 
                     b.HasKey("ID");
 
                     b.HasIndex("ClientId");
 
+                    b.HasIndex("SourceId");
+
                     b.ToTable("Orders");
 
                     b.HasData(
                         new
                         {
-                            ID = new Guid("3af4d7f6-bf1f-4da6-9d6f-097bc2a5c2b8"),
+                            ID = new Guid("98f7cb52-0b0f-4b5e-8594-a20adb9a6da9"),
                             Amount = 10,
-                            DateOrdered = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            ClientId = new Guid("f8c6521e-8aab-4927-86ba-fdbc0bb0d0eb"),
+                            DateOrdered = new DateTime(2023, 7, 26, 21, 50, 9, 47, DateTimeKind.Local).AddTicks(1351),
                             Name = "Bluegrass Beans",
                             Price = 120.00m,
-                            RoastLevel = "Light",
-                            SourceName = "Fazenda Santa Ines, Minas Gerais, Brazil"
+                            RoastLevel = 0,
+                            SourceId = new Guid("1a4d58e2-ba0b-4153-af81-fd0b6049e348")
                         },
                         new
                         {
-                            ID = new Guid("fe7600d6-745d-4ff0-be34-47ebf6090b02"),
+                            ID = new Guid("fd996062-bd49-4bd8-9bca-297bbcc21cff"),
                             Amount = 8,
-                            DateOrdered = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            ClientId = new Guid("acdda976-63ad-47fa-b7d6-d89ea9ecbfe5"),
+                            DateOrdered = new DateTime(2023, 7, 26, 21, 50, 9, 47, DateTimeKind.Local).AddTicks(1427),
                             Name = "River City Roasts",
                             Price = 110.00m,
-                            RoastLevel = "Medium",
-                            SourceName = "Carmo Estate, Sul de Minas, Brazil"
-                        },
-                        new
-                        {
-                            ID = new Guid("898c64cc-0df1-42be-88a8-cb3b1e24adca"),
-                            Amount = 6,
-                            DateOrdered = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Name = "Derby Day Coffee",
-                            Price = 140.00m,
-                            RoastLevel = "Dark",
-                            SourceName = "La Soledad, Acatenango, Guatemala"
-                        },
-                        new
-                        {
-                            ID = new Guid("5b48ce81-4e93-4888-a618-3360a906873f"),
-                            Amount = 12,
-                            DateOrdered = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Name = "Bardstown Brews",
-                            Price = 160.00m,
-                            RoastLevel = "Medium",
-                            SourceName = "Finca El Injerto, Huehuetenango, Guatemala"
-                        },
-                        new
-                        {
-                            ID = new Guid("c5124582-3b53-42e2-a199-db275c7fecfd"),
-                            Amount = 9,
-                            DateOrdered = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Name = "Southern Comfort Cafe",
-                            Price = 180.00m,
-                            RoastLevel = "Dark",
-                            SourceName = "Hacienda La Esmeralda, Boquete, Panama"
-                        },
-                        new
-                        {
-                            ID = new Guid("baab65be-064b-46f5-b0ac-54e3b165edb7"),
-                            Amount = 10,
-                            DateOrdered = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Name = "Cherokee Park Perks",
-                            Price = 150.00m,
-                            RoastLevel = "Medium",
-                            SourceName = "Finca Deborah, Volcan, Panama"
-                        },
-                        new
-                        {
-                            ID = new Guid("91996708-d833-42a3-804a-90f9004332a2"),
-                            Amount = 8,
-                            DateOrdered = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Name = "Churchill Grinds",
-                            Price = 120.00m,
-                            RoastLevel = "Dark",
-                            SourceName = "Hacienda El Roble, Santander, Colombia"
-                        },
-                        new
-                        {
-                            ID = new Guid("d6f03f16-048a-4ca8-952e-02fa81f9c2d8"),
-                            Amount = 11,
-                            DateOrdered = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Name = "NuLu Java",
-                            Price = 160.00m,
-                            RoastLevel = "Medium",
-                            SourceName = "Finca Los Nogales, Tolima, Colombia"
-                        },
-                        new
-                        {
-                            ID = new Guid("464b02e0-7082-40c6-9931-8078f3e35302"),
-                            Amount = 9,
-                            DateOrdered = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Name = "Bluegrass Beans",
-                            Price = 170.00m,
-                            RoastLevel = "Light",
-                            SourceName = "Hunkute Cooperative, Sidamo, Ethiopia"
-                        },
-                        new
-                        {
-                            ID = new Guid("afd0d4ad-c96d-4090-aee0-55aeeef90736"),
-                            Amount = 7,
-                            DateOrdered = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Name = "River City Roasts",
-                            Price = 150.00m,
-                            RoastLevel = "Dark",
-                            SourceName = "Guji Highland Farm, Guji, Ethiopia"
+                            RoastLevel = 1,
+                            SourceId = new Guid("ff85d5a3-945b-4a97-9d61-d808f3893e5f")
                         });
-                });
-
-            modelBuilder.Entity("RoasterBuddy.Models.Roast", b =>
-                {
-                    b.Property<int>("ID")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("INTEGER");
-
-                    b.Property<string>("Name")
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("RoastLevel")
-                        .HasColumnType("TEXT");
-
-                    b.HasKey("ID");
-
-                    b.ToTable("Roasts");
                 });
 
             modelBuilder.Entity("RoasterBuddy.Models.Source", b =>
@@ -270,70 +178,70 @@ namespace RoasterBuddy.Migrations
                     b.HasData(
                         new
                         {
-                            ID = new Guid("5d90ef3d-d504-4dcd-8c1f-d5699036c071"),
+                            ID = new Guid("1a4d58e2-ba0b-4153-af81-fd0b6049e348"),
                             Cost = 2.40m,
                             Farm = "Fazenda Santa Ines, Minas Gerais",
                             Location = "Brazil"
                         },
                         new
                         {
-                            ID = new Guid("1d3f4bfc-e3d1-414c-b202-100930c0dfc2"),
+                            ID = new Guid("ff85d5a3-945b-4a97-9d61-d808f3893e5f"),
                             Cost = 2.75m,
                             Farm = "Carmo Estate, Sul de Minas",
                             Location = "Brazil"
                         },
                         new
                         {
-                            ID = new Guid("7fc1027b-fe84-4b82-89fa-ec9023a60748"),
+                            ID = new Guid("07b4d790-a98e-480a-85c2-0f03882c6be9"),
                             Cost = 4.67m,
                             Farm = "La Soledad, Acatenango",
                             Location = "Guatemala"
                         },
                         new
                         {
-                            ID = new Guid("cac137ca-ea56-4f87-b33f-7fc72d9ab680"),
+                            ID = new Guid("611ce66e-f50c-48d8-9ad6-e6233f76d1b2"),
                             Cost = 2.67m,
                             Farm = "Finca El Injerto, Huehuetenango",
                             Location = "Guatemala"
                         },
                         new
                         {
-                            ID = new Guid("6b221e39-41a7-45a6-908f-60dd71e77e50"),
+                            ID = new Guid("282b9b7e-21f7-43c7-a275-10ddb989970f"),
                             Cost = 4.00m,
                             Farm = "Hacienda La Esmeralda, Boquete",
                             Location = "Panama"
                         },
                         new
                         {
-                            ID = new Guid("60575eb9-a088-4ffc-9010-3c02a4ce87dd"),
+                            ID = new Guid("bebaae8a-9742-415a-9619-0d3f3d1e0710"),
                             Cost = 3.00m,
                             Farm = "Finca Deborah, Volcan",
                             Location = "Panama"
                         },
                         new
                         {
-                            ID = new Guid("66a5636b-f794-4652-98c6-2cfdf32dbdfb"),
+                            ID = new Guid("9d9b6bd1-8724-4599-997b-29851e27370e"),
                             Cost = 3.00m,
                             Farm = "Hacienda El Roble, Santander",
                             Location = "Colombia"
                         },
                         new
                         {
-                            ID = new Guid("8914d73b-c01d-45a5-9558-df60626a6436"),
+                            ID = new Guid("395c5405-206b-441e-9c04-3dc67f285481"),
                             Cost = 2.91m,
                             Farm = "Finca Los Nogales, Tolima",
                             Location = "Colombia"
                         },
                         new
                         {
-                            ID = new Guid("25eed7af-23dd-42ce-ad63-38c075a22bd6"),
+                            ID = new Guid("e025b756-c544-4101-99e9-4d1e396c4674"),
                             Cost = 3.78m,
                             Farm = "Hunkute Cooperative, Sidamo",
                             Location = "Ethiopia"
                         },
                         new
                         {
-                            ID = new Guid("546b7556-57f0-46a6-b8a0-3dfcab4f8cdb"),
+                            ID = new Guid("d1a363a7-f81f-4bec-ad3b-6dbd565904ce"),
                             Cost = 4.29m,
                             Farm = "Guji Highland Farm, Guji",
                             Location = "Ethiopia"
@@ -346,10 +254,21 @@ namespace RoasterBuddy.Migrations
                         .WithMany("Orders")
                         .HasForeignKey("ClientId");
 
+                    b.HasOne("RoasterBuddy.Models.Source", "Source")
+                        .WithMany("Orders")
+                        .HasForeignKey("SourceId");
+
                     b.Navigation("Client");
+
+                    b.Navigation("Source");
                 });
 
             modelBuilder.Entity("RoasterBuddy.Models.Client", b =>
+                {
+                    b.Navigation("Orders");
+                });
+
+            modelBuilder.Entity("RoasterBuddy.Models.Source", b =>
                 {
                     b.Navigation("Orders");
                 });

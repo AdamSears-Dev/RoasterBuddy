@@ -18,24 +18,25 @@ namespace RoasterBuddy.Pages.Order
             _context = context;
         }
 
-      public RoasterBuddy.Models.Order Order { get; set; } = default!; 
+        public RoasterBuddy.Models.Order Order { get; set; } = default!;
 
         public async Task<IActionResult> OnGetAsync(Guid? id)
         {
-            if (id == null || _context.Orders == null)
+            if (id == null)
             {
                 return NotFound();
             }
 
-            var order = await _context.Orders.FirstOrDefaultAsync(m => m.ID == id);
-            if (order == null)
+            Order = await _context.Orders
+                .Include(o => o.Client)
+                .Include(o => o.Source)
+                .FirstOrDefaultAsync(m => m.ID == id);
+
+            if (Order == null)
             {
                 return NotFound();
             }
-            else 
-            {
-                Order = order;
-            }
+
             return Page();
         }
     }

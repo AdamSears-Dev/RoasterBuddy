@@ -7,6 +7,9 @@ namespace RoasterBuddy.Models
         public string? Farm { get; set; }
         public string? Location { get; set; }
         public decimal Cost { get; set; }
+        
+        // Navigation property for associated orders.
+        public virtual ICollection<Order> Orders { get; set; } = new List<Order>();
     }
 }
 

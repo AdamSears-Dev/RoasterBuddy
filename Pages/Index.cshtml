@@ -7,95 +7,11 @@
 }
 
 <div class="container">
-    <h2>Clients</h2>
-    <table class="table table-bordered">
-        @foreach (var item in Model.Clients)
-        {
-            <tr>
-                <td>@item.Name</td>
-                <td>
-                    <a asp-page="./Client/Edit" asp-route-id="@item.ID">Edit</a> |
-                    <a asp-page="./Client/Details" asp-route-id="@item.ID">Details</a> |
-                    <a asp-page="./Client/Delete" asp-route-id="@item.ID">Delete</a>
-                </td>
-            </tr>
-        }
-    </table>
+    <h2>RoasterBuddy</h2>
 
-    @*<h2>Orders</h2>
-    <table class="table table-bordered">
-        @foreach (var item in Model.Orders)
-        {
-            <tr>
-                <td>@item.DateOrdered</td>
-                <td>
-                    <a asp-page="./Order/Edit" asp-route-id="@item.ID">Edit</a> |
-                    <a asp-page="./Order/Details" asp-route-id="@item.ID">Details</a> |
-                    <a asp-page="./Order/Delete" asp-route-id="@item.ID">Delete</a>
-                </td>
-            </tr>
-        }
-    </table>
-
-    <h2>Sources</h2>
-    <table class="table table-bordered">
-        @foreach (var item in Model.Sources)
-        {
-            <tr>
-                <td>@item.Farm</td>
-                <td>
-                    <a asp-page="./Source/Edit" asp-route-id="@item.ID">Edit</a> |
-                    <a asp-page="./Source/Details" asp-route-id="@item.ID">Details</a> |
-                    <a asp-page="./Source/Delete" asp-route-id="@item.ID">Delete</a>
-                </td>
-            </tr>
-        }
-    </table>*@
-
-    <h2>Orders</h2>
-    <table class="table table-bordered">
-        <thead>
-            <tr>
-                <th>Date Ordered</th>
-                <th>Client</th>
-                <th>Source</th>
-                <th>Roast Level</th>
-                <th>Amount</th>
-                <th>Price</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var item in Model.Orders)
-            {
-                <tr>
-                    <td>@item.DateOrdered</td>
-                    <td>@item.Name</td>
-                    <td>@item.SourceName</td>
-                    <td>@item.RoastLevel</td>
-                    <td>@item.Amount</td>
-                    <td>@item.Price</td>
-                    <td>
-                        <a asp-page="./Order/Edit" asp-route-id="@item.ID">Edit</a> |
-                        <a asp-page="./Order/Details" asp-route-id="@item.ID">Details</a> |
-                        <a asp-page="./Order/Delete" asp-route-id="@item.ID">Delete</a>
-                    </td>
-                </tr>
-            }
-        </tbody>
-    </table>
-
-    <h2>Roasts</h2>
-    <table class="table table-bordered">
-        @foreach (var item in Model.Roasts)
-        {
-            <tr>
-                <td>@item.Name</td>
-                <td>
-                    <a asp-page="./Roast/Edit" asp-route-id="@item.ID">Edit</a> |
-                    <a asp-page="./Roast/Details" asp-route-id="@item.ID">Details</a> |
-                    <a asp-page="./Roast/Delete" asp-route-id="@item.ID">Delete</a>
-                </td>
-            </tr>
-        }
+    <a asp-page="/Order/Create">Create a New Order</a> <br />
+    <a asp-page="/Order/Index">View All Orders</a> <br />
+    <a asp-page="/Client/Index">View Clients</a> <br />
+    <a asp-page="/Source/Index">View Sources</a> <br />
     </table>
 </div>

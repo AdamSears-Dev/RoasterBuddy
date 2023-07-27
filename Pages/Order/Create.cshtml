@@ -5,9 +5,8 @@
     ViewData["Title"] = "Create";
 }
 
-<h1>Create</h1>
+<h1>Create New Order</h1>
 
-<h4>Order</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
@@ -33,9 +32,14 @@
                 <span asp-validation-for="Order.RoastLevel" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Order.SourceName" class="control-label"></label>
-                <select asp-for="Order.SourceName" class="form-control" asp-items="ViewBag.SourceName"></select>
-                <span asp-validation-for="Order.SourceName" class="text-danger"></span>
+                <label asp-for="Order.SourceId" class="control-label"></label>
+                <select asp-for="Order.SourceId" class="form-control" asp-items="ViewBag.SourceName"></select>
+                <span asp-validation-for="Order.SourceId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Order.DateOrdered" class="control-label"></label>
+                <input asp-for="Order.DateOrdered" class="form-control" />
+                <span asp-validation-for="Order.DateOrdered" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />

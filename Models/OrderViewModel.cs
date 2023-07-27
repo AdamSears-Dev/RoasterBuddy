@@ -8,7 +8,7 @@ namespace RoasterBuddy.Models
         public Client? Client { get; set; }
 
         [Required]
-        public string? Source { get; set; }
+        public Guid? Source { get; set; } // Changed from string to Guid?
 
         [Required]
         public string? RoastLevel { get; set; }
@@ -18,5 +18,9 @@ namespace RoasterBuddy.Models
 
         [Required]
         public decimal Price { get; set; }
+
+        [Required(ErrorMessage = "Date ordered is required.")]
+        public DateTime DateOrdered { get; set; }
     }
+
 }

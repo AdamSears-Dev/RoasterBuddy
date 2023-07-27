@@ -24,7 +24,10 @@ namespace RoasterBuddy.Pages.Order
         {
             if (_context.Orders != null)
             {
-                Order = await _context.Orders.Include(o => o.Client).ToListAsync();
+                Order = await _context.Orders
+                    .Include(o => o.Client)
+                    .Include(o => o.Source)  
+            .ToListAsync();
             }
         }
 
