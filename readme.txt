@@ -13,6 +13,7 @@ Feature 2 - Asynchronous Programming: RoasterBuddy utilizes async programming to
 Feature 3 - Multiple Related Entities: RoasterBuddy includes several related entities (e.g., Order, Client, Source). These entities can be queried together, allowing for data retrieval from multiple tables, an operation equivalent to a SQL JOIN. 
   
 Feature 4 - Use of Regular Expressions: The application uses Regular Expressions (Regex) to validate the client's contact information. This helps to ensure that the email address entered matches the standard format for email addresses. 
+
 Getting Started
 
 
@@ -21,8 +22,6 @@ Getting Started
 3. Build and run the project (*requires .NET 6.0 or later*).
 4. Navigate through the application using the provided links.
 5. Add, edit, and delete clients, orders, and sources as necessary.
-6. Note for Mac users: make sure to change the location for the database file in appsettings.json 
-	*example is provided in comment
 
 
 Features
